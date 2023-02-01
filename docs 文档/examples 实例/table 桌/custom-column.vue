@@ -9,7 +9,7 @@
       </template>
     </el-table-column>
     <el-table-column label="Name" width="180">
-      <template #default="scope">
+      <template slot-scope="scope">
         <el-popover effect="light" trigger="hover" placement="top" width="auto">
           <template #default>
             <div>name: {{ scope.row.name }}</div>
